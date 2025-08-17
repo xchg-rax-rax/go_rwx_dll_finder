@@ -73,7 +73,7 @@ func does_dll_have_rwx_section(dll_path string) (bool) {
 	pe_file, err := pe.Open(dll_path)
 	if err != nil {
 		fmt.Printf(
-			"[-] failed to open dll %s for parsing:\n%v", 
+			"[-] failed to open dll %s for parsing:\n%v\n", 
 			dll_path,
 			err,
 		)
